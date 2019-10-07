@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
+import logo from '/Users/pericepope/Desktop/band-sandbox/src/logo.svg';
 import './App.css';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import SignupPage from '../SignupPage/SignupPage';
+import LoginPage from '../LoginPage/LoginPage';
 import userService from '../../utils/userService';
 // import tokenService from '../../utils/tokenService';
 
@@ -26,24 +29,32 @@ handleSignupOrLogin = () => {
   render() {
     return(
     <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header className="App-header">BAND &nbsp;&nbsp;&nbsp;  SANDBOX</header>
+        <BrowserRouter>
+        <Switch>
+        <Route exact path='/' render={() =>
+        // <GamePage />
+        <h1>GAME PAGE WILL BE HERE!!!</h1>
+        } />
+        {/* <Route exact path='/signup' render={({ history }) => 
+            <SignupPage
+              history={history}
+              handleSignupOrLogin={this.handleSignupOrLogin}
+            />
+          }/>
+          <Route exact path='/login' render={({ history }) => 
+            <LoginPage
+              history={history}
+              handleSignupOrLogin={this.handleSignupOrLogin}
+            />
+            :
+            <Redirect to='/login' />
+          } /> */}
+        </Switch>
+        </BrowserRouter>
     </div>
-    )
+    );
   }
-
 }
 
 
