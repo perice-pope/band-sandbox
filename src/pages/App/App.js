@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import logo from '/Users/pericepope/Desktop/band-sandbox/src/logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import SignupPage from '../SignupPage/SignupPage';
 import LoginPage from '../LoginPage/LoginPage';
 import userService from '../../utils/userService';
 import SandboxPage from '../SandboxPage/SandboxPage'; 
-// import tokenService from '../../utils/tokenService';
 
 
 class App extends Component {
