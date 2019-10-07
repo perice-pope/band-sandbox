@@ -2,9 +2,11 @@ import React from 'react';
 import './DrumButton.css';
 
 
-function DrumButton ({ drum }) {
+function DrumButton(props) {
     return <div className='drum-button'>
-      Hello {drum}
+      <h1>{props.drum.name}</h1> 
+      <h2>{props.drum.key}</h2>
+      <h2>{props.drum.sound}</h2>
     </div>
   }
 

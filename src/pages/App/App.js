@@ -12,7 +12,7 @@ class App extends Component {
     this.state = {
       drumState: [
         {
-         name: 'Kick-1',
+         name: 'blasdfdsfs-1',
          key: 'Q',
          sound: 'audio/ap_bongo_high1.wav',
         },
@@ -104,7 +104,7 @@ handleSignupOrLogin = () => {
         <BrowserRouter>
         <Switch>
         <Route exact path='/' render={() =>
-        <SandboxPage />
+        <SandboxPage drumsets={this.state.drumState} />
         } />
         <Route exact path='/signup' render={({ history }) => 
             <SignupPage

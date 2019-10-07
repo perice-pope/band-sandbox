@@ -13,18 +13,10 @@ const SandboxPage = (props) => {
       <div className="flex-h align-flex-end">
         <h1>Band Sandbox</h1>
         {/* BUTTON COMPONENTS  */}
-        <DrumButton />
-        <DrumButton />
-        <DrumButton />
-        <DrumButton />
-        <DrumButton />
-        <DrumButton />
-        <DrumButton />
-        <DrumButton />
-        <DrumButton />
-        <DrumButton />
-        <DrumButton />
-        <DrumButton />
+        {props.drumsets.map((d,i)=> {
+          return <DrumButton drum={d}/>
+        })}
+    
 
         </div>
         </div>
