@@ -6,12 +6,84 @@ import LoginPage from '../LoginPage/LoginPage';
 import userService from '../../utils/userService';
 import SandboxPage from '../SandboxPage/SandboxPage'; 
 
-
 class App extends Component {
   constructor() {
     super();
     this.state = {
-    // Initialize user if there's a token, otherwise null
+      drumState: [
+        {
+         name: 'Kick-1',
+         key: 'Q',
+         sound: 'audio/ap_bongo_high1.wav',
+        },
+        
+        {
+          name: 'Kick-2',
+          key: 'W',
+          sound: 'audio/ap_bongo_high1.wav',
+        },
+        
+        {
+          name: 'Snare-1',
+          key: 'E',
+          sound: 'audio/ap_bongo_high1.wav',
+        },
+        
+        {
+          name: 'Snare-2',
+          key: 'A',
+          sound: 'audio/ap_bongo_high1.wav'
+        },
+        
+        {
+          name: 'Clap' ,
+          key: 'S',
+          sound: 'audio/ap_bongo_high1.wav'
+        },
+        
+        {
+          name: 'Open-HH',
+          key: 'D',
+          sound: 'audio/ap_bongo_high1.wav'
+        },
+        
+        {
+          name: "Kick-Hat",
+          key: 'Z',
+          sound: 'audio/ap_bongo_high1.wav'
+        },
+        
+        {
+          name: 'Kick',
+          key: 'X',
+          sound: 'audio/ap_bongo_high1.wav'
+        },
+        
+        {
+          name: 'Closed-HH',
+          key: 'C',
+          sound: 'audio/ap_bongo_high1.wav'
+        }, 
+      
+        {
+          name: 'Closed-HH',
+          key: 'R',
+          sound: 'audio/ap_bongo_high1.wav'
+        },
+      
+        {
+          name: 'Closed-HH',
+          key: 'F',
+          sound: 'audio/ap_bongo_high1.wav'
+        },
+      
+        {
+          name: 'Closed-HH',
+          key: 'V',
+          sound: 'audio/ap_bongo_high1.wav'
+        }
+      ],
+    // Initialize user if there's a token, otherwise 'null'
     user: userService.getUser()
   }; 
 }
@@ -51,7 +123,5 @@ handleSignupOrLogin = () => {
     );
   }
 }
-
-
 
 export default App;

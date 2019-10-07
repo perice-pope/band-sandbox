@@ -1,7 +1,7 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
 import NavBar from '../../components/NavBar/NavBar';
-// import '../SandboxPage';
+import DrumButton from '../../components/DrumButton/DrumButton';
 
 const SandboxPage = (props) => {
   return (
@@ -11,7 +11,21 @@ const SandboxPage = (props) => {
         handleLogout={props.handleLogout}
       />
       <div className="flex-h align-flex-end">
-        <h1>Add beats Bro!!!</h1>
+        <h1>Band Sandbox</h1>
+        {/* BUTTON COMPONENTS  */}
+        <DrumButton />
+        <DrumButton />
+        <DrumButton />
+        <DrumButton />
+        <DrumButton />
+        <DrumButton />
+        <DrumButton />
+        <DrumButton />
+        <DrumButton />
+        <DrumButton />
+        <DrumButton />
+        <DrumButton />
+
         </div>
         </div>
   );
