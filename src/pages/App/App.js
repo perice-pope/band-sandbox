@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import SignupPage from '../SignupPage/SignupPage';
 import LoginPage from '../LoginPage/LoginPage';
 import userService from '../../utils/userService';
+import SandboxPage from '../SandboxPage/SandboxPage'; 
 // import tokenService from '../../utils/tokenService';
 
 
@@ -33,8 +34,7 @@ handleSignupOrLogin = () => {
         <BrowserRouter>
         <Switch>
         <Route exact path='/' render={() =>
-        // <GamePage />
-        <h1>GAME PAGE WILL BE HERE!!!</h1>
+        <SandboxPage />
         } />
         <Route exact path='/signup' render={({ history }) => 
             <SignupPage
