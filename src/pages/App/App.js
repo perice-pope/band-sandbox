@@ -36,7 +36,7 @@ handleSignupOrLogin = () => {
         // <GamePage />
         <h1>GAME PAGE WILL BE HERE!!!</h1>
         } />
-        {/* <Route exact path='/signup' render={({ history }) => 
+        <Route exact path='/signup' render={({ history }) => 
             <SignupPage
               history={history}
               handleSignupOrLogin={this.handleSignupOrLogin}
@@ -45,11 +45,8 @@ handleSignupOrLogin = () => {
           <Route exact path='/login' render={({ history }) => 
             <LoginPage
               history={history}
-              handleSignupOrLogin={this.handleSignupOrLogin}
-            />
-            :
-            <Redirect to='/login' />
-          } /> */}
+              handleSignupOrLogin={this.handleSignupOrLogin} /> } />
+
         </Switch>
         </BrowserRouter>
     </div>
