@@ -1,4 +1,4 @@
-import React,  {Component} from "react";
+import React, {Component} from "react";
 import click1 from "./click1.wav";
 import click2 from "./click2.wav";
 
@@ -78,11 +78,11 @@ class Metronome extends Component {
     return (
     <div className="metronome">
         <div className="bpm-slider">
-            <div> {bpm}BPM</div>
+            <div> {bpm} BPM</div>
             <input 
             type="range" 
-            min="60" 
-            max="240" 
+            min="50" 
+            max="400" 
             value={bpm}
             onChange={this.handleBpmChange}    
             >

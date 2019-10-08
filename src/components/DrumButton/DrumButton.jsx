@@ -1,19 +1,23 @@
 import React, { Component } from 'react';
 import './DrumButton.css';
 
-
 // function handleClick(props) {
 //   console.log('Boom Clap!');
 //   console.log({props});  
 // }
 
 class DrumButton extends Component {
-  state = {
-    play: false,
-    audio: ""
+  constructor(props){
+    super(props);
+      this.state = {
+      play: false
+  }
   }
 
-  clickhandler = (e) => {
+  audio = new Audio(this.props.drum.sound)
+  
+
+  clickHandler = (e) => {
     console.log('click')
     this.setState({
       play: !this.state.play,
@@ -42,11 +46,13 @@ class DrumButton extends Component {
     console.log(this.state.play, "<<<<<<")
     console.log(this.state.audio, "<state audio<<")
     return (
+  
     <div className='drum-button'>
       <h1>{this.props.drum.name}</h1> 
-      <button onClick={ this.clickhandler } value={this.props.drum.sound}>{this.props.drum.key}</button>
+      <button onClick={ this.clickHandler } value={this.props.drum.sound}>{this.props.drum.key}</button>
       <source src={this.props.drum.sound}></source>
     </div>
+  
     );
   }
 }
