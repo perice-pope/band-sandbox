@@ -6,15 +6,17 @@ import LoginPage from '../LoginPage/LoginPage';
 import userService from '../../utils/userService';
 import SandboxPage from '../SandboxPage/SandboxPage'; 
 
+
 class App extends Component {
   constructor() {
     super();
     this.state = {
       drumState: [
         {
-         name: 'blasdfdsfs-1',
+         name: 'boom-pop',
          key: 'Q',
-         sound: 'audio/ap_bongo_high1.wav',
+         sound: 'http://streaming.tdiradio.com:8000/house.mp3',
+
         },
         
         {
@@ -85,7 +87,7 @@ class App extends Component {
       ],
     // Initialize user if there's a token, otherwise 'null'
     user: userService.getUser()
-  }; 
+  }
 }
 
 handleLogout = () => {
@@ -101,6 +103,7 @@ handleSignupOrLogin = () => {
     return(
     <div className="App">
       <header className="App-header">BAND &nbsp;&nbsp;&nbsp;  SANDBOX</header>
+      
         <BrowserRouter>
         <Switch>
         <Route exact path='/' render={() =>
@@ -116,7 +119,7 @@ handleSignupOrLogin = () => {
             <LoginPage
               history={history}
               handleSignupOrLogin={this.handleSignupOrLogin} /> } />
-
+      
         </Switch>
         </BrowserRouter>
     </div>

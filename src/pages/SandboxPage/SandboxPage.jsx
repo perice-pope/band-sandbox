@@ -8,16 +8,15 @@ const SandboxPage = (props) => {
     <div>
       <NavBar
         user={props.user}
-        handleLogout={props.handleLogout}
-      />
-      <div className="flex-h align-flex-end">
+        handleLogout={props.handleLogout} />
+        <div className="flex-h align-flex-end" >
         <h1>Band Sandbox</h1>
-        {/* BUTTON COMPONENTS  */}
-        {props.drumsets.map((d,i)=> {
-          return <DrumButton drum={d}/>
-        })}
-    
 
+        {props.drumsets.map((d,i)=> {
+          return <DrumButton key={i} drum={d}/>
+        }
+        )}
+    
         </div>
         </div>
   );
