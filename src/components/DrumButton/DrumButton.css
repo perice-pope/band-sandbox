@@ -1,4 +1,6 @@
 .drum-button { 
     width: 70%;  
-    background-color: blue;
+    background-color: rgb(37, 37, 179);
+    flex-wrap: wrap;  
+    align-content: center; 
 }

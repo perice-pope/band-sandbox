@@ -13,7 +13,7 @@ const SandboxPage = (props) => {
         
         <h1>Band Sandbox</h1>
         <Metronome />
-        <div classNam="container-beats">
+        <div className="container-beats">
         {props.drumsets.map((d,i)=> {
           return <DrumButton key={i} drum={d}/>
         }

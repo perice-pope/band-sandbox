@@ -3,6 +3,5 @@
     display: flex;
     flex-wrap: wrap;  
     flex-direction: row; 
-    background-color: blue;
     align-content: center; 
 }
