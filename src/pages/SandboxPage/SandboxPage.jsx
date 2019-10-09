@@ -10,7 +10,7 @@ const SandboxPage = (props) => {
       <NavBar
         user={props.user}
         handleLogout={props.handleLogout} />
-        
+    
         <h1>Band Sandbox</h1>
         <Metronome />
         <div className="container-beats">
