@@ -13,70 +13,70 @@ class App extends Component {
     this.state = {
       drumState: [
         {
-         name: 'boom-pop',
+         name: 'Bongo',
          key: 'Q',
-         sound: 'http://streaming.tdiradio.com:8000/house.mp3',
+         sound: 'audio/ap_bongo_high1.wav',
 
         },
         
         {
-          name: 'Kick-2',
+          name: 'Conga',
           key: 'W',
-          sound: 'audio/ap_bongo_high1.wav',
+          sound: 'audio/ap_conga_highflam.wav',
         },
         
         {
-          name: 'Snare-1',
+          name: 'Cowbell',
           key: 'E',
-          sound: 'audio/ap_bongo_high1.wav',
+          sound: 'audio/ap_ghana_bell_low1.wav',
         },
         
         {
-          name: 'Snare-2',
+          name: 'Mambo Bell',
           key: 'A',
-          sound: 'audio/ap_bongo_high1.wav'
+          sound: 'audio/ap_mambo_bell1.wav'
         },
         
         {
-          name: 'Clap' ,
+          name: 'Maracas' ,
           key: 'S',
-          sound: 'audio/ap_bongo_high1.wav'
+          sound: 'audio/ap_maracas_swirl.wav'
         },
         
         {
-          name: 'Open-HH',
+          name: 'Crash',
           key: 'D',
-          sound: 'audio/ap_bongo_high1.wav'
+          sound: 'audio/Crashes_OneShots_Crash_09.wav'
         },
         
         {
-          name: "Kick-Hat",
+          name: "Kick",
           key: 'Z',
-          sound: 'audio/ap_bongo_high1.wav'
+          sound: 'audio/JAY_DEE_vol_01_kit_03_kick.wav'
         },
         
         {
-          name: 'Kick',
+          name: 'Hi-Hat',
           key: 'X',
-          sound: 'audio/ap_bongo_high1.wav'
+          sound: 'audio/JAY_DEE_vol_01_kit_06_hihat.wav'
         },
         
         {
-          name: 'Closed-HH',
+          name: 'Snare',
           key: 'C',
-          sound: 'audio/ap_bongo_high1.wav'
+          sound: 'audio/JAY_DEE_vol_01_kit_09_snare.wav'
         }, 
       
         {
-          name: 'Closed-HH',
+          name: 'Snare 808',
           key: 'R',
-          sound: 'audio/ap_bongo_high1.wav'
+          sound: 'audio/Snare_808clap.wav'
         },
       
         {
-          name: 'Closed-HH',
+          name: 'Crash 2',
           key: 'F',
-          sound: 'audio/ap_bongo_high1.wav'
+          sound: 'audio/Rev_Crash_01_PL.wav'
         },
       
         {
