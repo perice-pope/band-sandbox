@@ -1,6 +1,7 @@
 .drum-button { 
+    color: antiquewhite;
     width: 70%;  
-    background-color: rgb(37, 37, 179);
+    background-color: rgb(26, 26, 27);
     flex-wrap: wrap;  
     align-content: center; 
 }
@@ -14,3 +15,12 @@ button {
     color: #fff;
     font-size: 18px;
 }
+
+button:hover {
+    background-color: yellow;
+  }
+
+.drum-button:hover {
+    background-color:  #FF0000;
+    opacity: 0.5;
+  }

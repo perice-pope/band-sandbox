@@ -3,6 +3,7 @@ import React from 'react';
 import NavBar from '../../components/NavBar/NavBar';
 import DrumButton from '../../components/DrumButton/DrumButton';
 import Metronome from '../../Metronome';
+import '../SandboxPage/SandboxPage.css'; 
 
 const SandboxPage = (props) => {
   return (

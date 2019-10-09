@@ -10,12 +10,22 @@ class DrumButton extends Component {
   togglePlay = () => {
     this.audio.paused ? this.audio.play() : this.audio.pause();
   }
+
+  keyPressed(event) {
+    if (event.key === "KeyB") {
+      this.audio.paused ? this.audio.play() : this.audio.pause();
+    }
+  }
+    
   
   render() {
     return (
       <div className='drum-button'>
         <h1>{this.props.drum.name}</h1> 
-        <button onClick={ this.togglePlay }>{this.props.drum.key}</button>
+        <button 
+        onClick={this.togglePlay} 
+        onKeyPress={this.KeyPressed}
+        > {this.props.drum.key} </button>
       </div>
     );
   }
