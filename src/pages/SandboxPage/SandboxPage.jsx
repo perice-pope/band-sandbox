@@ -3,7 +3,7 @@ import NavBar from '../../components/NavBar/NavBar';
 import DrumButton from '../../components/DrumButton/DrumButton';
 import Metronome from '../../Metronome';
 import '../SandboxPage/SandboxPage.css'; 
-import KeyboardEventHandler from 'react-keyboard-event-handler';
+// import KeyboardEventHandler from 'react-keyboard-event-handler';
 
 
 const SandboxPage = (props) => {

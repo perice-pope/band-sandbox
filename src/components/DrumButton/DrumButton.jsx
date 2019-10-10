@@ -16,9 +16,11 @@ class DrumButton extends Component {
     return (
       <div className='drum-button'>
         <h1>{this.props.drum.name}</h1> 
+
         <KeyboardEventHandler 
         handleKeys={['a', 'b', 'c']} 
         onKeyEvent={this.togglePlay} />
+        
         <button onClick={this.togglePlay} > 
         {this.props.drum.key} 
         </button>

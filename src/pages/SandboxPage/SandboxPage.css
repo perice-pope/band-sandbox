@@ -5,6 +5,10 @@ a, h1:not(.drum-button) {
     font-size: .4em;
 }
 
+h1:nth-child(2) {
+    font-size: 1.1em;
+  }
+
 /*  LINKS RESET */
 a {
   text-decoration: none;
