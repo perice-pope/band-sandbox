@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './DrumButton.css';
+import KeyboardEventHandler from 'react-keyboard-event-handler';
 
 
 class DrumButton extends Component {
@@ -11,21 +12,17 @@ class DrumButton extends Component {
     this.audio.paused ? this.audio.play() : this.audio.pause();
   }
 
-  keyPressed(event) {
-    if (event.key === "KeyB") {
-      this.audio.paused ? this.audio.play() : this.audio.pause();
-    }
-  }
-    
-  
   render() {
     return (
       <div className='drum-button'>
         <h1>{this.props.drum.name}</h1> 
-        <button 
-        onClick={this.togglePlay} 
-        onKeyPress={this.KeyPressed}
-        > {this.props.drum.key} </button>
+        <KeyboardEventHandler 
+        handleKeys={['a', 'b', 'c']} 
+        onKeyEvent={this.togglePlay} />
+        <button onClick={this.togglePlay} > 
+        {this.props.drum.key} 
+        </button>
+
       </div>
     );
   }

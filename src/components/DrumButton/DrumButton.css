@@ -4,6 +4,7 @@
     background-color: rgb(26, 26, 27);
     flex-wrap: wrap;  
     align-content: center; 
+  
 }
 
 button {
@@ -17,10 +18,10 @@ button {
 }
 
 button:hover {
-    background-color: yellow;
+    background-color: rgb(39, 39, 30);
   }
 
 .drum-button:hover {
-    background-color:  #FF0000;
+    background-color:  rgba(194, 11, 11, 0.658);
     opacity: 0.5;
   }

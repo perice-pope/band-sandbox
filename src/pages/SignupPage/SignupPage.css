@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    font-size: xx-large; 
+    margin-top: 10px; 
+}
+
+/*  LINKS RESET */
+a {
+  text-decoration: none;
+  color: rgba(34, 34, 34, .8);
+}
+
+:hover, :focus {
+    color: darken(#000, 20%);
+  }
+
 .SignupPage {
     display: flex;
     flex-flow: column nowrap;
@@ -5,3 +23,5 @@
     align-items: center;
     margin-bottom: 50px;
   }
+
+  

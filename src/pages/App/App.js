@@ -102,8 +102,6 @@ handleSignupOrLogin = () => {
   render() {
     return(
     <div className="App">
-      <header className="App-header">BAND &nbsp;&nbsp;&nbsp;  SANDBOX</header>
-      
         <BrowserRouter>
         <Switch>
         <Route exact path='/' render={() =>
