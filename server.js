@@ -3,8 +3,28 @@ const express = require('express');
 const path = require('path');
 // const favicon = require('serve-favicon');
 const logger = require('morgan');
+const cors = require('cors'); 
+ 
+var app = require('express')();
+var server = require('http').Server(app);
+var io = require('socket.io')(server);
+// io.set('origins', '*');
+io.origins(['localhost:3000']);
 
-const app = express();
+// Created an instance of IO
+// var io = require('socket.io')(app);
+app.use(cors({origin:'*'})); 
+io.on('connection', function (socket) {
+  //socket.emit('music', { type: 'trumpet' });
+
+  socket.on('music', (data) => {
+    socket.broadcast.emit('music', {data: data })
+  });
+});
+
+/*End of socket io*/
+
+
 
 require('dotenv').config();
 require('./config/database');
