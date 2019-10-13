@@ -5,8 +5,9 @@ import SignupPage from '../SignupPage/SignupPage';
 import LoginPage from '../LoginPage/LoginPage';
 import userService from '../../utils/userService';
 import SandboxPage from '../SandboxPage/SandboxPage'; 
-import openSocket from 'socket.io-client';
-const socket = openSocket('http://localhost:3001');
+import socketModule from '../../socket-module/socket-module';
+
+socketModule.attachListeners();
 
 class App extends Component {
   constructor() {
