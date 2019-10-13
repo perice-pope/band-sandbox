@@ -13,12 +13,12 @@ button {
     border: 1px solid #832420;
     border-radius: 2px;
     width: 100px;
-    color: #fff;
+    color: transparent;
     font-size: 18px;
 }
 
 button:hover {
-    background-color: rgb(39, 39, 30);
+    background-color: rgb(228, 211, 211);
   }
 
 .drum-button:hover {
