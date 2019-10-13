@@ -1,68 +1,53 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Welcome to Band Sandbox**
 
-## Available Scripts
+**Play in Band Sandbox Here:**
 
-In the project directory, you can run:
+<a> https://band-sandbox.herokuapp.com/ </a>
 
-### `npm start`
+<a href="https://imgur.com/PMgSGCb"><img src="https://i.imgur.com/PMgSGCbm.png" title="source: imgur.com" /></a>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<!--<p align="center">
+ <img width="460" height="300" src="https://i.imgur.com/D2J0cfj.png" title="source: imgur.com">
+</p>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<p align="center">
+ <img width="460" height="300" src="https://i.imgur.com/jywvbEs.png" title="source: imgur.com">
+</p>-->
 
-### `npm test`
+**Band Sandbox**
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Band Sandbox is a realtime live music making enviornment. Users can explore sounds together and practice in real time with a metronome. Users can also sign-up and log-in. 
 
-### `npm run build`
+**Technology Used**
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* React JS
+* Node JS
+* MongoDB
+* Express
+* Socket.io
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+**Wireframes**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p align="center">
+<a href="https://imgur.com/dyY3eG1"><img src="https://i.imgur.com/dyY3eG1m.png" title="source: imgur.com" /></a>
+</p>
 
-### `npm run eject`
+<p align="center">
+<a href="https://imgur.com/uOs2FkZ"><img src="https://i.imgur.com/uOs2FkZm.png" title="source: imgur.com" /></a>
+</p>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<p align="center">
+<a href="https://imgur.com/NeYcfx5"><img src="https://i.imgur.com/NeYcfx5m.png" title="source: imgur.com" /></a>
+</p>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Future Development** 
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+First development goal is to syncronize the sounds between users. 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+* Google Login
+* Welcome Message  
+* Live Chat via Socket.io 
+* Keyboard Play
+* More Sounds
+* Link Invite via Socket.io "rooms"  
+* Global Metronome  
